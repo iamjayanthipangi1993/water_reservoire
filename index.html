@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Reservoir Project</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-water"></i>
+            AquaReservoir
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#storage">Storage</a></li>
+            <li><a href="#agriculture">Agriculture</a></li>
+            <li><a href="#power">Hydro Power</a></li>
+            <li><a href="#drinking">Drinking Water</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            
+            WATER RESERVOIR PROJECT
+        </p>
+
+        <h1>
+            Saving Water Today
+            <span>For a Better Tomorrow</span>
+        </h1>
+
+        <p>
+            Water reservoirs are essential for storing and managing
+            water for agriculture, drinking water, electricity generation
+            and many other important needs.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn primary-btn">
+                Explore Project
+            </a>
+
+            <button class="btn secondary-btn" onclick="showMessage()">
+                Learn More
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+        <p>ABOUT RESERVOIRS</p>
+        <h2>What is a Water Reservoir?</h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638883863/EducationHub/photos/ladybower-reservoir.jpg"
+                 alt="Water reservoir">
+        </div>
+
+        <div class="about-text">
+
+            <h3>
+                <i class="fa-solid fa-water"></i>
+                Water Reservoir
+            </h3>
+
+            <p>
+                A water reservoir is a natural or artificial storage area
+                used to collect and store water. Dams and lakes are common
+                examples of reservoirs.
+            </p>
+
+            <p>
+                Reservoirs help communities manage water resources throughout
+                the year. Stored water can be released when water demand is
+                high or rainfall is low.
+            </p>
+
+            <div class="info-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>
+                    Reservoirs play an important role in water conservation,
+                    agriculture, electricity production and drinking water supply.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORAGE ================= -->
+
+<section id="storage" class="section colored-section">
+
+    <div class="section-title">
+        <p>WATER STORAGE</p>
+        <h2>Store Water For The Future</h2>
+    </div>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <i class="fa-solid fa-cloud-rain"></i>
+            <h3>Rainwater Collection</h3>
+            <p>
+                Rainwater flows into rivers and reservoirs where it can
+                be collected and stored.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Water Storage</h3>
+            <p>
+                Large reservoirs store huge amounts of water for use
+                throughout the year.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-sun"></i>
+            <h3>Summer Supply</h3>
+            <p>
+                Stored water can be released during summer when rainfall
+                and river flow may decrease.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AGRICULTURE ================= -->
+
+<section id="agriculture" class="section">
+
+    <div class="section-title">
+        <p>AGRICULTURE</p>
+        <h2>Water For Farming</h2>
+    </div>
+
+    <div class="content-grid">
+
+        <div class="content-text">
+
+            <h3>
+                <i class="fa-solid fa-seedling"></i>
+                Reservoirs Support Agriculture
+            </h3>
+
+            <p>
+                Reservoir water is supplied to agricultural fields through
+                canals, pipelines and irrigation systems.
+            </p>
+
+            <p>
+                Farmers use this water for growing crops, especially during
+                periods when rainfall is insufficient.
+            </p>
+
+            <button class="learn-btn" onclick="showAgriculture()">
+                Know More
+            </button>
+
+        </div>
+
+        <img class="content-image"
+             src="https://h2oglobalnews.com/wp-content/uploads/2023/09/Sprinkler-irrigation-system-smart-water-conservation-technique-farmsio.jpg"
+             alt="Agriculture field">
+
+    </div>
+
+</section>
+
+
+<!-- ================= HYDRO POWER ================= -->
+
+<section id="power" class="section power-section">
+
+    <div class="section-title">
+        <p>HYDROELECTRIC POWER</p>
+        <h2>Clean Energy From Water</h2>
+    </div>
+
+    <div class="content-grid reverse">
+
+        <img class="content-image"
+             src="https://blog.wika.com/us/files/2019/07/hydropower-dam_resized.jpg"
+             alt="Hydroelectric power">
+
+        <div class="content-text">
+
+            <h3>
+                <i class="fa-solid fa-bolt"></i>
+                How Hydropower Works
+            </h3>
+
+            <p>
+                Water stored at a higher level in a reservoir has potential
+                energy. When water flows through a dam, it moves turbines.
+            </p>
+
+            <p>
+                The turbines rotate generators which produce electricity.
+                This electricity can then be supplied to homes, schools
+                and industries.
+            </p>
+
+            <button class="learn-btn" onclick="showHydro()">
+                See How It Works
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DRINKING WATER ================= -->
+
+<section id="drinking" class="section">
+
+    <div class="section-title">
+        <p>DRINKING WATER</p>
+        <h2>Safe Water For Communities</h2>
+    </div>
+
+    <div class="drinking-box">
+
+        <div class="drinking-icon">
+            <i class="fa-solid fa-glass-water"></i>
+        </div>
+
+        <div>
+            <h3>Reservoirs Provide Drinking Water</h3>
+
+            <p>
+                Reservoirs store water that can be treated and supplied
+                to cities, towns and villages. Water treatment plants
+                remove impurities before the water reaches households.
+            </p>
+
+            <p>
+                Reliable reservoir storage helps maintain water supply
+                during dry periods.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= COUNTERS ================= -->
+
+<section class="counter-section">
+
+    <div class="counter-card">
+        <i class="fa-solid fa-droplet"></i>
+        <h2 class="counter" data-target="95">0</h2>
+        <p>Water Management</p>
+    </div>
+
+    <div class="counter-card">
+        <i class="fa-solid fa-seedling"></i>
+        <h2 class="counter" data-target="80">0</h2>
+        <p>Agriculture Support</p>
+    </div>
+
+    <div class="counter-card">
+        <i class="fa-solid fa-bolt"></i>
+        <h2 class="counter" data-target="70">0</h2>
+        <p>Energy Support</p>
+    </div>
+
+    <div class="counter-card">
+        <i class="fa-solid fa-city"></i>
+        <h2 class="counter" data-target="90">0</h2>
+        <p>Community Support</p>
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-title">
+        <p>CONTACT & FEEDBACK</p>
+        <h2>Share Your Feedback</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <form id="feedbackForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea id="message"
+                      rows="5"
+                      placeholder="Write your feedback..."
+                      required></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                Submit Feedback
+            </button>
+
+        </form>
+
+        <div class="contact-info">
+
+            <h3>Let's Protect Water</h3>
+
+            <p>
+                Water is one of our most valuable natural resources.
+                Every small step towards water conservation matters.
+            </p>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>waterproject@example.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Water Conservation Center</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        <i class="fa-solid fa-water"></i>
+        AquaReservoir
+    </div>
+
+    <p>
+        © 2026 Water Reservoir Mini Project | HTML • CSS • JavaScript
+    </p>
+
+</footer>
+
+
+<!-- ================= POPUP ================= -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <button class="close-btn" onclick="closePopup()">
+            &times;
+        </button>
+
+        <i class="fa-solid fa-water popup-icon"></i>
+
+        <h2 id="popupTitle">Water Reservoir</h2>
+
+        <p id="popupText">
+            Water reservoirs help communities store and manage water.
+        </p>
+
+        <button class="btn primary-btn" onclick="closePopup()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
